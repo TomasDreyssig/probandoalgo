@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.navegacion {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 170%;
+    font-style: oblique;
+    color:rgb(134, 134, 134)
+}
+
+li a{
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+
+}
+
+h1 {
+    margin-top: 4%;
+    display: flex;
+    color: black;
+    justify-content: center;
+    font-size: 245%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    margin-top: 4%;
+    display: flex;
+    color: black;
+    justify-content: flex-start;
+    font-size: 190%;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+p {
+    margin-top: 3%;
+    display: flex;
+    justify-content: right;
+    color: rgb(77, 77, 77);
+    font-size: 135%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.segundoparrafo {
+    margin-top: 3%;
+    display: flex;
+    justify-content: right;
+    color: rgb(77, 77, 77);
+    font-size: 112%;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+img {
+    width: 800px;
+    height: 550px;
+    margin-left: 500px;
+    margin-top: 2%;
+}
+
+footer {
+    margin-top: 3%;
+}
+
+h3 {
+    margin-top: 0.3%;
+    font-size: 90%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Comienza css artistas*/
+
+.tituloartistas .titulofestivales {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    display: flex;
+    color: black;
+    justify-content: left;
+    font-size: 245%;
+    font-family: 'Crimson Text', serif;
+}
+
+
+.container img {
+
+    width: 500px;
+    height: auto;
+    margin-left: 30px;
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 1, 1fr;
+    grid-template-areas:
+        "grid1"
+        "grid2"
+        "grid3"
+        "grid4";
+
+}
+
+.container div {
+    display: flex;
+}
+
+.grid1 {
+    display: flex;
+}
+
+.parrats {
+    font-family: 'Nerko One', cursive;
+    margin-left: 10px;
+
+}
+
+/*media query para dispositivos medianos Artistas*/
+
+@media screen and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+    .container img {
+
+        width: 274px;
+        height: 250px;
+        margin-left: 30px;
+
+
+    }
+
+
+
+
+
+}
+
+
+/*media query para dispositivos pequeños Artistas*/
+@media screen and (max-width:576px) {
+
+    .container img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Comienza css Festival*/
+
+.fotofesti {
+    width: 700px;
+    height: 450px;
+
+}
+
+
+.container-fiesta {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    justify-content: center;
+    align-items: center;
+    margin-right: 28%;
+
+}
+
+.container-fiesta {
+    transition: all 200ms;
+    position: relative;
+}
+
+.container-fiesta :hover {
+    transform: scale(1.15);
+}
+
+.pfestival a {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2%;
+    text-decoration: dashed;
+    color: black;
+    font-size: 25px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+
+/*media query para dispositivos medianos Festivales */
+
+@media screen and (max-width:768px) {
+    .container-fiesta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+
+
+    }
+
+    .fotofesti {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+
+/*media query para dispositivos pequeños Festivales */
+@media screen and (max-width:576px) {
+    .container-fiesta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotofesti {
+        width: 350px;
+        height: 150px;
+        margin-left: 10%;
+        justify-content: left
+    }
+
+}
+
+
+
+/*Comienza css fotografias */
+
+
+
+.parrafofoto {
+    margin-top: 3%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    justify-content: center;
+    align-items: center;
+    margin-right: 28%;
+}
